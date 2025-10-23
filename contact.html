@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT ME!</title>
+    
+    <meta http-equiv="refresh" content="5; URL=https://getmysocial.com/esmeleahnavo">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ffc0cb; /* Rose clair */
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #dc3545;
+            margin-top: 15px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ALL MY CONTACTS ARE HERE</h1>
+        <p>Wait a second.</p>
+        <p>It will appear in <span id="decompte" class="countdown">5</span> secondes.</p>
+        
+        <p>If it doesn't appearn click here :</p>
+        <p><a href="https://getmysocial.com/esmeleahnavo">Accéder au site immédiatement</a></p>
+    </div>
+
+    <script>
+        // JavaScript pour le compte à rebours
+        let tempsRestant = 5;
+        const decompteElement = document.getElementById('decompte');
+        
+        const intervalle = setInterval(function() {
+            tempsRestant--;
+            decompteElement.textContent = tempsRestant;
+
+            if (tempsRestant <= 0) {
+                clearInterval(intervalle); 
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
